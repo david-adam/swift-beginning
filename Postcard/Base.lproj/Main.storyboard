@@ -59,7 +59,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pWb-Lh-Wbe">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pWb-Lh-Wbe">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -104,6 +104,15 @@
                                     <rect key="frame" x="259" y="159" width="113" height="103"/>
                                 </variation>
                             </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SV8-eM-KVb">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="23" y="159" width="228" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -113,6 +122,7 @@
                                 <exclude reference="Qpw-id-Wyo"/>
                                 <exclude reference="lnX-Rb-6qN"/>
                                 <exclude reference="ymO-bO-ZYG"/>
+                                <exclude reference="SV8-eM-KVb"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -122,14 +132,16 @@
                                 <include reference="Qpw-id-Wyo"/>
                                 <include reference="lnX-Rb-6qN"/>
                                 <include reference="ymO-bO-ZYG"/>
+                                <include reference="SV8-eM-KVb"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="enterMessageTextField" destination="pWb-Lh-Wbe" id="3yO-KL-fjS"/>
-                        <outlet property="enterNameFextField" destination="cHU-rb-4Nx" id="J9p-Yh-6NP"/>
+                        <outlet property="enterNameTextField" destination="cHU-rb-4Nx" id="QT7-pG-Zyk"/>
                         <outlet property="mailButton" destination="Qpw-id-Wyo" id="dHB-DG-quw"/>
                         <outlet property="messageLabel" destination="lnX-Rb-6qN" id="Ub9-su-zzz"/>
+                        <outlet property="nameLabel" destination="SV8-eM-KVb" id="KPJ-6q-WWw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
