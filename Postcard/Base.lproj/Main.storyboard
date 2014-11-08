@@ -91,6 +91,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="56" y="298" width="289" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7Hc-gA-nfE"/>
+                                </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnX-Rb-6qN">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -98,7 +101,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="23" y="72" width="42" height="21"/>
+                                    <rect key="frame" x="23" y="72" width="228" height="57"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -122,6 +125,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="enterMessageTextField" destination="pWb-Lh-Wbe" id="3yO-KL-fjS"/>
+                        <outlet property="enterNameFextField" destination="cHU-rb-4Nx" id="J9p-Yh-6NP"/>
+                        <outlet property="messageLabel" destination="lnX-Rb-6qN" id="Ub9-su-zzz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
